@@ -8,16 +8,16 @@
         "bap_id": "buyer-app-preprod-v2.ondc.org",
         "bap_uri": "https://buyer-app-preprod-v2.ondc.org/protocol/v1",
         "bpp_uri": "https://ondc-v2.niveashop.in/api",
-        "transaction_id": "825d1fe6-c458-4c3b-8179-afc5bbecdf4b",
-        "message_id": "6d153700-426f-422e-90c3-734317494404",
-        "timestamp": "2023-11-24T07:02:00.882Z",
+        "transaction_id": "7abc53ae-ff91-438d-8671-fa9fbfeb6e65",
+        "message_id": "43eeb6ea-df4a-476a-b1fa-5e4368e21f5c",
+        "timestamp": "2023-12-28T11:38:15.067Z",
         "bpp_id": "ondc-v2.niveashop.in",
         "ttl": "PT30S"
     },
     "message": {
         "order": {
             "provider": {
-                "id": "65452178ee0a9b22fc925dbd",
+                "id": "ondc-v2.niveashop.in",
                 "descriptor": {
                     "name": "Nivea Shop"
                 },
@@ -29,64 +29,96 @@
             },
             "items": [
                 {
-                    "id": "43001178882275",
+                    "id": "43001208832227",
                     "fulfillment_id": "Fulfillment1",
                     "quantity": {
-                        "count": 1
+                        "count": 2
                     }
                 },
                 {
-                    "id": "43001180291299",
+                    "id": "43001212731619",
                     "fulfillment_id": "Fulfillment1",
                     "quantity": {
-                        "count": 1
+                        "count": 3
                     }
                 }
             ],
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "518"
+                    "value": "2596"
                 },
                 "breakup": [
                     {
-                        "title": "Body Lotion - Aloe Hydration (Normal skin) - 200ml",
-                        "@ondc/org/item_id": "43001178882275",
+                        "title": "Bio Aloe Vera Deodorant | 75 ml - Naturally Good - MYOC",
+                        "@ondc/org/item_id": "43001208832227",
                         "@ondc/org/item_quantity": {
-                            "count": 1
+                            "count": 2
                         },
                         "@ondc/org/title_type": "item",
+                        "item": {
+                            "parent_item_id": "7730154078435",
+                            "quantity": {
+                                "available": {
+                                    "count": "2"
+                                },
+                                "maximum": {
+                                    "count": "2"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "200.00"
+                            }
+                        },
                         "price": {
                             "currency": "INR",
-                            "value": "188.00"
+                            "value": 400
                         }
                     },
                     {
+                        "@ondc/org/item_id": "Fulfillment1",
                         "title": "Delivery charges",
                         "@ondc/org/title_type": "delivery",
                         "price": {
                             "currency": "INR",
-                            "value": "75.0"
+                            "value": "0.0"
                         }
                     },
                     {
-                        "title": "Body Lotion - Oil in Lotion Rose & Argan Oil (Dry Skin) - 400ml",
-                        "@ondc/org/item_id": "43001180291299",
+                        "title": "42K Deo - Pack of 3",
+                        "@ondc/org/item_id": "43001212731619",
                         "@ondc/org/item_quantity": {
-                            "count": 1
+                            "count": 3
                         },
                         "@ondc/org/title_type": "item",
+                        "item": {
+                            "parent_item_id": "7730156306659",
+                            "quantity": {
+                                "available": {
+                                    "count": "3"
+                                },
+                                "maximum": {
+                                    "count": "3"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "600.00"
+                            }
+                        },
                         "price": {
                             "currency": "INR",
-                            "value": "255.00"
+                            "value": 1800
                         }
                     },
                     {
+                        "@ondc/org/item_id": "Fulfillment1",
                         "title": "Delivery charges",
                         "@ondc/org/title_type": "delivery",
                         "price": {
                             "currency": "INR",
-                            "value": "75.0"
+                            "value": "0.0"
                         }
                     }
                 ],
@@ -103,11 +135,18 @@
                     "state": {
                         "descriptor": {
                             "name": "pending",
-                            "code": "pending"
+                            "code": "Pending"
                         }
                     },
                     "start": {
                         "location": {
+                            "id": "NIVEA_INDIA",
+                            "address": {
+                                "locality": "ANS Compound",
+                                "city": "Mumbai",
+                                "area_code": "421302",
+                                "state": "MH"
+                            },
                             "descriptor": {
                                 "name": "ANS Compound",
                                 "images": [
@@ -117,13 +156,13 @@
                             "gps": "19.2591222,73.0144914"
                         },
                         "contact": {
-                            "phone": "+91(0)2262487999",
-                            "email": "care@beiersdorf.com"
+                            "phone": "7676580202",
+                            "email": "support@nivea.com"
                         },
                         "time": {
                             "range": {
-                                "start": "2023-11-25T07:02:00.880Z",
-                                "end": "2023-11-25T07:02:00.881Z"
+                                "start": "2023-12-29T11:38:15.062Z",
+                                "end": "2023-12-30T11:38:15.062Z"
                             }
                         },
                         "instructions": {
@@ -137,30 +176,31 @@
                         "location": {
                             "address": {
                                 "name": "parmeshwar",
-                                "building": "Shamshan Ghat Road",
-                                "city": "New Delhi",
-                                "state": "Delhi",
+                                "building": "test",
+                                "locality": "Unnamed Road",
+                                "city": "Kalyan",
+                                "state": "Maharashtra",
                                 "country": "IND",
-                                "area_code": "110041"
+                                "area_code": "421204"
                             },
-                            "gps": "28.676629315749846, 77.06576049327852"
+                            "gps": "19.1636138,73.0931092"
+                        },
+                        "person": {
+                            "name": "parmeshwar"
                         },
                         "contact": {
                             "phone": "9076388126",
                             "email": "parmeshwar.rathod@schbang.com"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-12-29T11:38:15.063Z",
+                                "end": "2023-12-30T11:38:15.063Z"
+                            }
                         },
                         "instructions": {
                             "name": "status for drop",
                             "short_desc": "static description"
-                        }
-                    },
-                    "customer": {
-                        "contact": {
-                            "phone": "9076388126",
-                            "email": "parmeshwar.rathod@schbang.com"
-                        },
-                        "person": {
-                            "name": "parmeshwar.rathod"
                         }
                     }
                 }
@@ -181,35 +221,41 @@
                         "settlement_phase": "sale-amount",
                         "settlement_amount": "100",
                         "settlement_type": "neft",
+                        "upi_address": "",
                         "settlement_bank_account_no": "9908112021",
-                        "settlement_ifsc_code": "KKBK0000261"
+                        "settlement_ifsc_code": "KKBK0000261",
+                        "beneficiary_name": "ANALEMMA COMMERCE PRIVATE LIMITED",
+                        "bank_name": "KOTAK MAHINDRA BANK",
+                        "branch_name": "KOTAK MAHINDRA BANK, GURGAON"
                     }
                 ],
                 "params": {
-                    "transaction_id": "825d1fe6-c458-4c3b-8179-afc5bbecdf4b",
-                    "amount": "518",
+                    "transaction_id": "dcf316bc-e4ac-407e-bfe8-a34c1138c47b",
+                    "amount": "2596",
                     "currency": "INR"
                 }
             },
-            "created_at": "2023-11-24T07:02:00.878Z",
-            "id": "2023-11-24-912652",
+            "created_at": "2023-12-28T11:38:15.056Z",
+            "id": "2023-12-28-460990",
             "state": "Accepted",
             "billing": {
                 "name": "parmeshwar",
                 "address": {
                     "name": "parmeshwar",
-                    "building": "Shamshan Ghat Road",
-                    "city": "New Delhi",
-                    "state": "Delhi",
+                    "building": "Unnamed Road",
+                    "locality": "test",
+                    "city": "Kalyan",
+                    "state": "Maharashtra",
                     "country": "IND",
-                    "area_code": "110041"
+                    "area_code": "421204"
                 },
                 "phone": "9076388126",
                 "email": "parmeshwar.rathod@schbang.com",
-                "created_at": "2023-11-24T07:02:00.882Z",
-                "updated_at": "2023-11-24T07:02:00.882Z"
+                "created_at": "2023-12-28T11:38:15.067Z",
+                "updated_at": "2023-12-28T11:38:15.067Z"
             },
-            "update_at": "2023-11-24T07:02:00.882Z"
+            "tags": [],
+            "updated_at": "2023-12-28T11:38:15.067Z"
         }
     }
 }

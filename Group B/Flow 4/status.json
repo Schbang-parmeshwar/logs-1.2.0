@@ -8,13 +8,13 @@
         "bap_id": "buyer-app-preprod-v2.ondc.org",
         "bap_uri": "https://buyer-app-preprod-v2.ondc.org/protocol/v1",
         "bpp_uri": "https://ondc-v2.niveashop.in/api",
-        "transaction_id": "825d1fe6-c458-4c3b-8179-afc5bbecdf4b",
-        "message_id": "be3d3519-60d5-42a7-86ff-57307ace1319",
-        "timestamp": "2023-11-24T07:14:05.670Z",
+        "transaction_id": "7abc53ae-ff91-438d-8671-fa9fbfeb6e65",
+        "message_id": "16bfb962-b8e7-4e19-b5a3-4af78de4211a",
+        "timestamp": "2023-12-28T11:38:51.365Z",
         "bpp_id": "ondc-v2.niveashop.in",
         "ttl": "PT30S"
     },
     "message": {
-        "order_id": "2023-11-24-912652"
+        "order_id": "2023-12-28-460990"
     }
 }
