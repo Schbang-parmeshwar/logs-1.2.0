@@ -8,16 +8,16 @@
     "bap_id": "buyer-app-preprod-v2.ondc.org",
     "bap_uri": "https://buyer-app-preprod-v2.ondc.org/protocol/v1",
     "bpp_uri": "https://ondc-v2.niveashop.in/api",
-    "transaction_id": "edf425d7-2feb-48e4-ac22-835a804bacf5",
-    "message_id": "137eb261-5456-460f-a462-d30170ba9ec9",
-    "timestamp": "2023-12-22T09:54:39.303Z",
+    "transaction_id": "ffc46c79-1edf-4a12-b6d4-2d9961af7fa9",
+    "message_id": "ce0c0fb7-2525-4f14-9118-7b02633f7a4c",
+    "timestamp": "2024-01-05T12:21:45.309Z",
     "bpp_id": "ondc-v2.niveashop.in",
     "ttl": "PT30S"
   },
   "message": {
     "order": {
       "provider": {
-        "id": "65452178ee0a9b22fc925dbd",
+        "id": "ondc-v2.niveashop.in",
         "descriptor": {
           "name": "Nivea Shop"
         },
@@ -31,7 +31,6 @@
         {
           "id": "43001180324067",
           "fulfillment_id": "Fulfillment1",
-          "parent_item_id": "7730139463907",
           "tags": [
             {
               "code": "type",
@@ -45,9 +44,8 @@
           ]
         },
         {
-          "id": "43001195200739",
+          "id": "43001183011043",
           "fulfillment_id": "Fulfillment1",
-          "parent_item_id": "7730146672867",
           "tags": [
             {
               "code": "type",
@@ -79,7 +77,7 @@
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "1951.5"
+          "value": "954"
         },
         "breakup": [
           {
@@ -90,7 +88,6 @@
             },
             "@ondc/org/title_type": "item",
             "item": {
-              "parent_item_id": "7730139463907",
               "quantity": {
                 "available": {
                   "count": "3"
@@ -106,7 +103,7 @@
             },
             "price": {
               "currency": "INR",
-              "value": "1951.50"
+              "value": "624"
             }
           },
           {
@@ -119,30 +116,29 @@
             }
           },
           {
-            "title": "42K Roll on Pack of 2",
-            "@ondc/org/item_id": "43001195200739",
+            "title": "Body Lotion- Aloe Protection with SPF 15 - 200ml",
+            "@ondc/org/item_id": "43001183011043",
             "@ondc/org/item_quantity": {
-              "count": 3
+              "count": 2
             },
             "@ondc/org/title_type": "item",
             "item": {
-              "parent_item_id": "7730146672867",
               "quantity": {
                 "available": {
-                  "count": "3"
+                  "count": "2"
                 },
                 "maximum": {
-                  "count": "3"
+                  "count": "2"
                 }
               },
               "price": {
                 "currency": "INR",
-                "value": "375.00"
+                "value": "165.00"
               }
             },
             "price": {
               "currency": "INR",
-              "value": "1951.50"
+              "value": "330"
             }
           },
           {
