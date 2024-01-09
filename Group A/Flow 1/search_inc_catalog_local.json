@@ -9,7 +9,7 @@
         "bap_uri": "https://buyer-app-preprod-v2.ondc.org/protocol/test/v1/",
         "transaction_id": "3df395a9-c196-4678-a4d-gasdnasdngkjnds",
         "message_id": "2800837d-ecbb-498c-b859-121ef9f153ce",
-        "timestamp": "2023-11-20T17:27:34.459Z",
+        "timestamp": "2024-01-03T10:25:04.000Z",
         "ttl": "PT30S",
         "bpp_uri": "https://ondc-v2.niveashop.in/api",
         "bpp_id": "ondc-v2.niveashop.in"
@@ -25,8 +25,29 @@
                     "code": "catalog_inc",
                     "list": [
                         {
-                            "code": "mode",
-                            "value": "start"
+                            "code": "start_time",
+                            "value": "2024-01-03T05:23:04.572Z"
+                        },
+                        {
+                            "code": "end_time",
+                            "value": "2024-01-03T10:23:04.572Z"
+                        }
+                    ]
+                },
+                {
+                    "code": "bap_terms",
+                    "list": [
+                        {
+                            "code": "static_terms",
+                            "value": ""
+                        },
+                        {
+                            "code": "static_terms_new",
+                            "value": "https://github.com/ONDC-Official/NP-Static-Terms/buyerNP_BNP/1.0/tc.pdf"
+                        },
+                        {
+                            "code": "effective_date",
+                            "value": "2023-10-01T00:00:00.000Z"
                         }
                     ]
                 }
