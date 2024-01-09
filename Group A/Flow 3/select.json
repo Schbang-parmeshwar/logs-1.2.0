@@ -8,9 +8,9 @@
         "bap_id": "buyer-app-preprod-v2.ondc.org",
         "bap_uri": "https://buyer-app-preprod-v2.ondc.org/protocol/v1",
         "bpp_uri": "https://ondc-v2.niveashop.in/api",
-        "transaction_id": "b8518ea3-445d-4174-b257-d5a7c2d0c8f5",
-        "message_id": "82e77176-8c84-4eed-8f5b-9db59ab1a83b",
-        "timestamp": "2023-12-28T11:15:58.653Z",
+        "transaction_id": "2d3221bd-833b-4672-bac4-93380b6ebfa5",
+        "message_id": "6ab79c00-7477-4c7c-ab0a-145c0656f5ae",
+        "timestamp": "2024-01-09T10:20:47.080Z",
         "bpp_id": "ondc-v2.niveashop.in",
         "ttl": "PT30S"
     },
@@ -18,16 +18,16 @@
         "order": {
             "items": [
                 {
-                    "id": "43001177440483",
+                    "id": "43001177473251",
                     "quantity": {
                         "count": 2
                     },
                     "location_id": "NIVEA_INDIA"
                 },
                 {
-                    "id": "43001177473251",
+                    "id": "43001183011043",
                     "quantity": {
-                        "count": 3
+                        "count": 2
                     },
                     "location_id": "NIVEA_INDIA"
                 }
@@ -44,7 +44,7 @@
                 {
                     "end": {
                         "location": {
-                            "gps": "19.1636138,73.0931092",
+                            "gps": "19.1636045,73.097305",
                             "address": {
                                 "area_code": "421204"
                             }

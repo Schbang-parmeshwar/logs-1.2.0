@@ -8,9 +8,9 @@
     "bap_id": "buyer-app-preprod-v2.ondc.org",
     "bap_uri": "https://buyer-app-preprod-v2.ondc.org/protocol/v1",
     "bpp_uri": "https://ondc-v2.niveashop.in/api",
-    "transaction_id": "ffc46c79-1edf-4a12-b6d4-2d9961af7fa9",
-    "message_id": "4e7c90ef-4c30-4b5e-93bb-318491c9b573",
-    "timestamp": "2024-01-05T12:24:38.461Z",
+    "transaction_id": "d9645fc6-a141-4654-99d8-19afc853d6ab",
+    "message_id": "a51890d6-db1e-4ef9-b39e-6b2a1f311a4f",
+    "timestamp": "2024-01-09T07:08:19.630Z",
     "bpp_id": "ondc-v2.niveashop.in",
     "ttl": "PT30S"
   },
@@ -35,66 +35,57 @@
           "id": "43001180324067",
           "fulfillment_id": "Fulfillment1",
           "quantity": {
-            "count": 3
+            "count": 2
           }
         },
         {
           "id": "43001183011043",
           "fulfillment_id": "Fulfillment1",
           "quantity": {
-            "count": 2
+            "count": 3
           }
         }
       ],
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "954"
+          "value": "911.00"
         },
         "breakup": [
           {
             "title": "Body Lotion - Oil in Lotion Rose & Argan Oil (Dry Skin) - 200ml",
             "@ondc/org/item_id": "43001180324067",
             "@ondc/org/item_quantity": {
-              "count": 3
+              "count": 2
             },
             "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "416"
+            },
             "item": {
               "price": {
                 "currency": "INR",
                 "value": "208.00"
               }
-            },
-            "price": {
-              "currency": "INR",
-              "value": "624"
-            }
-          },
-          {
-            "@ondc/org/item_id": "Fulfillment1",
-            "title": "Delivery charges",
-            "@ondc/org/title_type": "delivery",
-            "price": {
-              "currency": "INR",
-              "value": "0.0"
             }
           },
           {
             "title": "Body Lotion- Aloe Protection with SPF 15 - 200ml",
             "@ondc/org/item_id": "43001183011043",
             "@ondc/org/item_quantity": {
-              "count": 2
+              "count": 3
             },
             "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "495"
+            },
             "item": {
               "price": {
                 "currency": "INR",
                 "value": "165.00"
               }
-            },
-            "price": {
-              "currency": "INR",
-              "value": "330"
             }
           },
           {
@@ -103,7 +94,7 @@
             "@ondc/org/title_type": "delivery",
             "price": {
               "currency": "INR",
-              "value": "0.0"
+              "value": "0.00"
             }
           }
         ],
@@ -139,8 +130,8 @@
             },
             "time": {
               "range": {
-                "start": "2024-01-05T12:22:13.543Z",
-                "end": "2024-01-10T12:22:13.543Z"
+                "start": "2024-01-09T07:07:07.466Z",
+                "end": "2024-01-14T07:07:07.466Z"
               }
             }
           },
@@ -167,8 +158,8 @@
             },
             "time": {
               "range": {
-                "start": "2024-01-06T12:22:13.539Z",
-                "end": "2024-01-07T12:22:13.539Z"
+                "start": "2024-01-10T07:07:07.466Z",
+                "end": "2024-01-11T07:07:07.466Z"
               }
             },
             "instructions": {
@@ -180,8 +171,8 @@
           },
           "state": {
             "descriptor": {
-              "name": "Order-delivered",
-              "code": "Order-delivered"
+              "name": "Out-for-delivery",
+              "code": "Out-for-delivery"
             }
           },
           "@ondc/org/TAT": "P5D"
@@ -191,9 +182,9 @@
         "uri": "https://juspay.in/",
         "tl_method": "http/get",
         "params": {
-          "amount": "954",
+          "amount": "911",
           "currency": "INR",
-          "transaction_id": "d6d08f57-341d-439f-8234-edfc4edd588e"
+          "transaction_id": "edf3491b-5161-4200-8401-b27130c3243a"
         },
         "status": "PAID",
         "type": "ON-ORDER",
@@ -257,7 +248,7 @@
           ]
         }
       ],
-      "created_at": "2024-01-05T12:22:07.187Z",
+      "created_at": "2024-01-09T07:07:03.664Z",
       "billing": {
         "address": {
           "name": "parmeshwar",
@@ -271,8 +262,8 @@
         "phone": "9076388126",
         "name": "parmeshwar",
         "email": "parmeshwar.rathod@schbang.com",
-        "created_at": "2024-01-05T12:21:57.278Z",
-        "updated_at": "2024-01-05T12:21:57.278Z"
+        "created_at": "2024-01-09T07:06:57.966Z",
+        "updated_at": "2024-01-09T07:06:57.966Z"
       },
       "cancellation_terms": [
         {
@@ -361,9 +352,9 @@
           }
         }
       ],
-      "id": "2024-01-05-990587",
-      "state": "Completed",
-      "updated_at": "2024-01-05T12:22:13.543Z",
+      "id": "2024-01-09-927258",
+      "state": "In-progress",
+      "updated_at": "2024-01-09T07:08:19.630Z",
       "documents": [
         {
           "url": "https://invoice.com",

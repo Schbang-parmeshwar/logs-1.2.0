@@ -8,9 +8,9 @@
     "bap_id": "buyer-app-preprod-v2.ondc.org",
     "bap_uri": "https://buyer-app-preprod-v2.ondc.org/protocol/v1",
     "bpp_uri": "https://ondc-v2.niveashop.in/api",
-    "transaction_id": "ffc46c79-1edf-4a12-b6d4-2d9961af7fa9",
-    "message_id": "ce0c0fb7-2525-4f14-9118-7b02633f7a4c",
-    "timestamp": "2024-01-05T12:21:45.309Z",
+    "transaction_id": "d9645fc6-a141-4654-99d8-19afc853d6ab",
+    "message_id": "e690fa06-40c3-4819-bfe5-84aef78eb7a6",
+    "timestamp": "2024-01-09T07:06:47.254Z",
     "bpp_id": "ondc-v2.niveashop.in",
     "ttl": "PT30S"
   },
@@ -77,47 +77,12 @@
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "954"
+          "value": "911.00"
         },
         "breakup": [
           {
             "title": "Body Lotion - Oil in Lotion Rose & Argan Oil (Dry Skin) - 200ml",
             "@ondc/org/item_id": "43001180324067",
-            "@ondc/org/item_quantity": {
-              "count": 3
-            },
-            "@ondc/org/title_type": "item",
-            "item": {
-              "quantity": {
-                "available": {
-                  "count": "3"
-                },
-                "maximum": {
-                  "count": "3"
-                }
-              },
-              "price": {
-                "currency": "INR",
-                "value": "208.00"
-              }
-            },
-            "price": {
-              "currency": "INR",
-              "value": "624"
-            }
-          },
-          {
-            "@ondc/org/item_id": "Fulfillment1",
-            "title": "Delivery charges",
-            "@ondc/org/title_type": "delivery",
-            "price": {
-              "currency": "INR",
-              "value": "0.0"
-            }
-          },
-          {
-            "title": "Body Lotion- Aloe Protection with SPF 15 - 200ml",
-            "@ondc/org/item_id": "43001183011043",
             "@ondc/org/item_quantity": {
               "count": 2
             },
@@ -133,12 +98,38 @@
               },
               "price": {
                 "currency": "INR",
+                "value": "208.00"
+              }
+            },
+            "price": {
+              "currency": "INR",
+              "value": "416"
+            }
+          },
+          {
+            "title": "Body Lotion- Aloe Protection with SPF 15 - 200ml",
+            "@ondc/org/item_id": "43001183011043",
+            "@ondc/org/item_quantity": {
+              "count": 3
+            },
+            "@ondc/org/title_type": "item",
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "3"
+                },
+                "maximum": {
+                  "count": "3"
+                }
+              },
+              "price": {
+                "currency": "INR",
                 "value": "165.00"
               }
             },
             "price": {
               "currency": "INR",
-              "value": "330"
+              "value": "495"
             }
           },
           {
@@ -147,7 +138,7 @@
             "@ondc/org/title_type": "delivery",
             "price": {
               "currency": "INR",
-              "value": "0.0"
+              "value": "0.00"
             }
           }
         ],
