@@ -4,5 +4,13 @@
   },
   "dependencies": {
     "version-push": "^1.0.1"
-  }
+  },
+  "name": "logs-1.2.0",
+  "version": "1.0.0",
+  "main": "demo.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
