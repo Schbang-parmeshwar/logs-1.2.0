@@ -6,7 +6,7 @@
     "version-push": "^1.0.1"
   },
   "name": "logs-1.2.0",
-  "version": "3.1.7",
+  "version": "3.1.8",
   "main": "demo.js",
   "devDependencies": {},
   "keywords": [],
