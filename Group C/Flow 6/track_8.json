@@ -1,0 +1,20 @@
+{
+  "context": {
+    "domain": "ONDC:RET13",
+    "country": "IND",
+    "city": "std:011",
+    "action": "track",
+    "core_version": "1.2.0",
+    "bap_id": "buyer-app-preprod-v2.ondc.org",
+    "bap_uri": "https://buyer-app-preprod-v2.ondc.org/protocol/v1",
+    "bpp_uri": "https://ondc-v2.niveashop.in/api",
+    "transaction_id": "01bd612f-1501-4115-b728-54cf4f043ee2",
+    "message_id": "cbaca1e0-eac1-46ec-a504-fa7172fb1043",
+    "timestamp": "2024-02-02T10:35:26.392Z",
+    "bpp_id": "ondc-v2.niveashop.in",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order_id": "2024-02-02-669289"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "push": "node ./node_modules/version-push"
+  },
+  "dependencies": {
+    "version-push": "^1.0.1"
+  }
+}
