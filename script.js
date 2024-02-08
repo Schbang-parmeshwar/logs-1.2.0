@@ -15,10 +15,16 @@ function generateLogs(jsonFilePath) {
 
         // Create a new file for each entry
         entries.forEach((entry, index) => {
-            let newFileName = `${entry.action}_${index + 1}.json`;
-            if (entry.action.includes("select")) {
-                newFileName = `${entry.action}_${index}.json`;
+            if (entry.action == "status") {
+                return
             }
+            let newFileName = `${entry.action}.json`;
+            if (entry.action.includes("search")) {
+                newFileName = `${entry.action}_full_catalog.json`;
+            }
+            // if (entry.action.includes("select")) {
+            //     newFileName = `${entry.action}_${index}.json`;
+            // }
 
             if (entry.action == "on_status") {
                 console.log("On___Status", entry.action)
