@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const downloadDirectory = path.join(__dirname, 'IGM', 'Flow 1'); // Replace with your preferred directory structure
+const downloadDirectory = path.join(__dirname, 'IGM', 'Flow 2'); // Replace with your preferred directory structure
 if (!fs.existsSync(downloadDirectory)) {
     fs.mkdirSync(downloadDirectory);
 }
