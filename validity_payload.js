@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const downloadDirectory = path.join(__dirname, 'Group B', 'Flow 4');
+const downloadDirectory = path.join(__dirname, 'Group A', 'Flow 2');
 const payload = {
     "search_full_catalog_refresh": {},
     "on_search_full_catalog_refresh": {},
@@ -53,6 +53,7 @@ const returnPayload = () => {
 
             }
         });
+        console.log(payload)
         fs.writeFileSync("payload.json", JSON.stringify(payload, null, 2));
 
         return payload
