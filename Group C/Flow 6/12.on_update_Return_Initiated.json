@@ -3,14 +3,14 @@
     "domain": "ONDC:RET13",
     "country": "IND",
     "city": "std:022",
-    "action": "on_status",
+    "action": "on_update",
     "core_version": "1.2.0",
     "bap_id": "buyer-app-preprod-v2.ondc.org",
     "bap_uri": "https://buyer-app-preprod-v2.ondc.org/protocol/v1",
     "bpp_uri": "https://ondc-v2.niveashop.in/api",
-    "transaction_id": "b3e551ab-9eaf-4fa5-b888-2174ae2cabf0",
-    "message_id": "c8e3656b-b387-4c15-adec-271f0ebe2b9b",
-    "timestamp": "2024-02-18T08:43:37.975Z",
+    "transaction_id": "d10a05bf-00e4-429a-9272-9c423264f064",
+    "message_id": "8ecfe819-6ba3-48ad-bb96-e90e9f1aacca",
+    "timestamp": "2024-02-29T12:31:19.940Z",
     "bpp_id": "ondc-v2.niveashop.in",
     "ttl": "PT30S"
   },
@@ -18,9 +18,6 @@
     "order": {
       "provider": {
         "id": "ondc-v2.niveashop.in",
-        "descriptor": {
-          "name": "Nivea Shop"
-        },
         "locations": [
           {
             "id": "NIVEA_INDIA"
@@ -29,15 +26,22 @@
       },
       "items": [
         {
-          "id": "43001177473251",
+          "id": "43001186156771",
           "fulfillment_id": "Fulfillment1",
           "quantity": {
-            "count": 2
+            "count": 0
           }
         },
         {
-          "id": "43001178816739",
+          "id": "43001186189539",
           "fulfillment_id": "Fulfillment1",
+          "quantity": {
+            "count": 1
+          }
+        },
+        {
+          "id": "43001186156771",
+          "fulfillment_id": "C1",
           "quantity": {
             "count": 1
           }
@@ -46,42 +50,42 @@
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "635.00"
+          "value": "224"
         },
         "breakup": [
           {
-            "title": "Body Lotion - Oil in Lotion Cherry Blossom & Jojoba Oil - 200ml",
-            "@ondc/org/item_id": "43001177473251",
-            "@ondc/org/item_quantity": {
-              "count": 2
-            },
-            "@ondc/org/title_type": "item",
-            "price": {
-              "currency": "INR",
-              "value": "416"
-            },
-            "item": {
-              "price": {
-                "currency": "INR",
-                "value": "208.00"
-              }
-            }
-          },
-          {
-            "title": "Body Lotion - Aloe Hydration (Normal skin) - 400ml",
-            "@ondc/org/item_id": "43001178816739",
+            "title": "Body Lotion- Nourishing Body Milk (Very Dry Skin) - 400g",
+            "@ondc/org/item_id": "43001186156771",
             "@ondc/org/item_quantity": {
               "count": 1
             },
             "@ondc/org/title_type": "item",
             "price": {
               "currency": "INR",
-              "value": "219"
+              "value": 0
             },
             "item": {
               "price": {
                 "currency": "INR",
-                "value": "219.00"
+                "value": "239.00"
+              }
+            }
+          },
+          {
+            "title": "Body Lotion- Nourishing Body Milk (Very Dry Skin) - 200g",
+            "@ondc/org/item_id": "43001186189539",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "149"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "149.00"
               }
             }
           },
@@ -91,7 +95,7 @@
             "@ondc/org/title_type": "delivery",
             "price": {
               "currency": "INR",
-              "value": "0.00"
+              "value": "75.00"
             }
           }
         ],
@@ -101,10 +105,7 @@
         {
           "id": "Fulfillment1",
           "type": "Delivery",
-          "provider_id": "ondc-v2.niveashop.in",
-          "@ondc/org/provider_name": "Nivea Shop",
-          "tracking": true,
-          "rateable": false,
+          "tracking": false,
           "end": {
             "contact": {
               "email": "parmeshwar.rathod@schbang.com",
@@ -127,18 +128,24 @@
             },
             "time": {
               "range": {
-                "start": "2024-02-18T08:42:25.948Z",
-                "end": "2024-02-23T08:42:25.948Z"
-              },
-              "timestamp": "2024-02-18T08:43:28.000Z"
+                "start": "2024-03-05T12:20:04.908Z",
+                "end": "2024-03-06T12:20:04.908Z"
+              }
             }
           },
+          "state": {
+            "descriptor": {
+              "code": "Out-for-delivery"
+            }
+          },
+          "@ondc/org/provider_name": "Nivea Shop",
+          "@ondc/org/TAT": "P5D",
           "start": {
             "location": {
               "id": "NIVEA_INDIA",
               "address": {
-                "locality": "ANS Compound",
-                "city": "Mumbai",
+                "locality": "ANS compound - Thane",
+                "city": "Bhiwandi",
                 "area_code": "421302",
                 "state": "MH"
               },
@@ -151,48 +158,133 @@
               "gps": "19.2591222,73.0144914"
             },
             "contact": {
-              "phone": "7676580202",
-              "email": "support@nivea.com"
+              "phone": "2262487999",
+              "email": "care@beiersdorf.com"
             },
             "time": {
               "range": {
-                "start": "2024-02-19T08:42:25.948Z",
-                "end": "2024-02-20T08:42:25.948Z"
+                "start": "2024-03-05T12:20:04.908Z",
+                "end": "2024-03-06T12:20:04.908Z"
               },
-              "timestamp": "2024-02-18T08:43:07.000Z"
-            },
-            "instructions": {
-              "code": "2",
-              "name": "ONDC order",
-              "short_desc": "value of PCC",
-              "long_desc": "additional instructions such as register or counter no for self-pickup"
+              "timestamp": "2024-02-29T12:25:10.000Z"
             }
-          },
+          }
+        },
+        {
+          "id": "C1",
+          "type": "Cancel",
           "state": {
             "descriptor": {
-              "name": "Order-delivered",
-              "code": "Order-delivered"
+              "code": "Cancelled"
             }
           },
-          "@ondc/org/TAT": "P5D"
+          "tags": [
+            {
+              "code": "cancel_request",
+              "list": [
+                {
+                  "code": "reason_id",
+                  "value": "003"
+                },
+                {
+                  "code": "initiated_by",
+                  "value": "ondc-v2.niveashop.in"
+                }
+              ]
+            },
+            {
+              "code": "quote_trail",
+              "list": [
+                {
+                  "code": "type",
+                  "value": "item"
+                },
+                {
+                  "code": "id",
+                  "value": "43001186156771"
+                },
+                {
+                  "code": "currency",
+                  "value": "INR"
+                },
+                {
+                  "code": "value",
+                  "value": "-239"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "65e07911c3ef65519b1a5ae4",
+          "type": "Return",
+          "state": {
+            "descriptor": {
+              "code": "Return_Initiated"
+            }
+          },
+          "tags": [
+            {
+              "code": "return_request",
+              "list": [
+                {
+                  "code": "id",
+                  "value": "65e07911c3ef65519b1a5ae4"
+                },
+                {
+                  "code": "item_id",
+                  "value": "43001186189539"
+                },
+                {
+                  "code": "parent_item_id",
+                  "value": ""
+                },
+                {
+                  "code": "item_quantity",
+                  "value": "1"
+                },
+                {
+                  "code": "reason_id",
+                  "value": "003"
+                },
+                {
+                  "code": "reason_desc",
+                  "value": "detailed description for return"
+                },
+                {
+                  "code": "images",
+                  "value": "https://reference-buyer-app-assets/public-assets.s3.ap-south-1.amazonaws.com/2024-02-29-223070/7dcdd776-0c67-4c24-b92f-c3216f47c59d.png"
+                },
+                {
+                  "code": "ttl_approval",
+                  "value": "PT24H"
+                },
+                {
+                  "code": "ttl_reverseqc",
+                  "value": "P3D"
+                },
+                {
+                  "code": "initiated_by",
+                  "value": "buyer-app-preprod-v2.ondc.org"
+                }
+              ]
+            }
+          ]
         }
       ],
       "payment": {
         "uri": "https://juspay.in/",
         "tl_method": "http/get",
         "params": {
-          "amount": "635",
+          "amount": "463",
           "currency": "INR",
-          "transaction_id": "9911b169-6635-4f5c-a1b7-58ff712f3e34"
+          "transaction_id": "f8e2aa0d-3fc8-4ad5-98d7-6b939911839a"
         },
         "status": "PAID",
         "type": "ON-ORDER",
         "collected_by": "BAP",
         "@ondc/org/buyer_app_finder_fee_type": "percent",
         "@ondc/org/buyer_app_finder_fee_amount": "3.0",
-        "@ondc/org/settlement_basis": "return_window_expiry",
-        "@ondc/org/settlement_window": "P7D",
-        "@ondc/org/withholding_amount": "100.0",
         "@ondc/org/settlement_details": [
           {
             "settlement_counterparty": "seller-app",
@@ -207,26 +299,7 @@
           }
         ]
       },
-      "tags": [
-        {
-          "code": "bpp_terms",
-          "list": [
-            {
-              "code": "tax_number",
-              "value": "27NGBHG1392Y3Z2"
-            },
-            {
-              "code": "np_type",
-              "value": "ISN"
-            },
-            {
-              "code": "provider_tax_number",
-              "value": "27NGBHG1392Y3Z2"
-            }
-          ]
-        }
-      ],
-      "created_at": "2024-02-18T08:42:21.534Z",
+      "created_at": "2024-02-29T12:19:58.443Z",
       "billing": {
         "address": {
           "name": "parmeshwar",
@@ -240,18 +313,12 @@
         "phone": "9076388126",
         "name": "parmeshwar",
         "email": "parmeshwar.rathod@schbang.com",
-        "created_at": "2024-02-18T08:42:13.281Z",
-        "updated_at": "2024-02-18T08:42:13.281Z"
+        "created_at": "2024-02-29T12:19:51.149Z",
+        "updated_at": "2024-02-29T12:19:51.149Z"
       },
-      "id": "2024-02-18-354006",
+      "id": "2024-02-29-223070",
       "state": "Completed",
-      "updated_at": "2024-02-18T08:43:37.975Z",
-      "documents": [
-        {
-          "label": "Invoice",
-          "url": "https://ondc-testing.myshopify.com/pages/invoice?id=5610700472547"
-        }
-      ]
+      "updated_at": "2024-02-29T12:31:19.937Z"
     }
   }
 }

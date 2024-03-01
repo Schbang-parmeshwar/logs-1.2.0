@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const downloadDirectory = path.join(__dirname, 'Group A', 'Flow 2');
+const downloadDirectory = path.join(__dirname, 'Group B', 'Flow 5');
 const payload = {
     "search_full_catalog_refresh": {},
     "on_search_full_catalog_refresh": {},

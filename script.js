@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const downloadDirectory = path.join(__dirname, 'Group B', 'Flow 5'); // Replace with your preferred directory structure
+const downloadDirectory = path.join(__dirname, 'Group C', 'Flow 6'); // Replace with your preferred directory structure
 if (!fs.existsSync(downloadDirectory)) {
     fs.mkdirSync(downloadDirectory);
 }
@@ -37,8 +37,9 @@ function generateLogs(jsonFilePath) {
                     newFileName = `${entry.action}_Part_${entry.logs.message.order.fulfillments[0].type}.json`;
                 }
                 if (entry.action == "on_update") {
-                    console.log("On____UPDATE")
-                    newFileName = `${entry.action}_Part_${entry.logs.message.order.fulfillments[1].state.descriptor.code}.json`;
+                    console.log("On____UPDATE", entry.logs.message.order)
+                    console.log(newFileName)
+                    // newFileName = `${entry.action}_Part_${entry.logs.message.order.fulfillments[1].state.descriptor.code}.json`;
                 }
             }
 
@@ -53,10 +54,10 @@ function generateLogs(jsonFilePath) {
                     const lastAction = entry.logs.message?.issue.issue_actions.respondent_actions[entry.logs.message?.issue.issue_actions.respondent_actions.length - 1].respondent_action.toLowerCase();
                     if (lastAction) {
                         newFileName = `${entry.action}_${lastAction}_${index + 1}.json`
-                    }else{
+                    } else {
                         return
                     }
-                    
+
 
                 }
 
