@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const downloadDirectory = path.join(__dirname, 'Group C', 'Flow 6'); // Replace with your preferred directory structure
+const downloadDirectory = path.join(__dirname, 'Group A', 'Flow 3'); // Replace with your preferred directory structure
 if (!fs.existsSync(downloadDirectory)) {
     fs.mkdirSync(downloadDirectory);
 }
@@ -22,9 +22,12 @@ function generateLogs(jsonFilePath) {
             if (entry.action.includes("search")) {
                 newFileName = `${entry.action}_full_catalog.json`;
             }
-            // if (entry.action.includes("select")) {
-            //     newFileName = `${entry.action}_${index}.json`;
-            // }
+            if (entry.action.includes("select")) {
+                console.log(entry.action)
+                console.log(entry)
+                newFileName = index == 0 || index == 1 ? `${entry.action}_(out_of_stock).json` : `${entry.action}.json`;
+                //     newFileName = `${entry.action}_${index}.json`
+            }
 
             if (entry.action == "on_status") {
                 console.log("On___Status", entry.action)
@@ -38,8 +41,7 @@ function generateLogs(jsonFilePath) {
                 }
                 if (entry.action == "on_update") {
                     console.log("On____UPDATE", entry.logs.message.order)
-                    console.log(newFileName)
-                    // newFileName = `${entry.action}_Part_${entry.logs.message.order.fulfillments[1].state.descriptor.code}.json`;
+                    newFileName = `${entry.action}_Part_${entry.logs.message.order.fulfillments[1].state.descriptor.code}.json`;
                 }
             }
 
