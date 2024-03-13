@@ -3,14 +3,14 @@
     "domain": "ONDC:RET13",
     "country": "IND",
     "city": "std:022",
-    "action": "on_confirm",
+    "action": "on_status",
     "core_version": "1.2.0",
     "bap_id": "buyer-app-preprod-v2.ondc.org",
     "bap_uri": "https://buyer-app-preprod-v2.ondc.org/protocol/v1",
     "bpp_uri": "https://ondc-v2.niveashop.in/api",
     "transaction_id": "47552e24-c4d3-493c-a43b-ff81a0c174ab",
-    "message_id": "d3256f3b-df9a-43f8-b714-9a89172a2b3a",
-    "timestamp": "2024-03-13T04:46:03.816Z",
+    "message_id": "109584c8-8b97-4047-9c69-003c9670cd58",
+    "timestamp": "2024-03-13T04:49:11.095Z",
     "bpp_id": "ondc-v2.niveashop.in",
     "ttl": "PT30S"
   },
@@ -103,7 +103,7 @@
           },
           "state": {
             "descriptor": {
-              "code": "Pending"
+              "code": "Out-for-delivery"
             }
           },
           "@ondc/org/provider_name": "Nivea Shop",
@@ -133,7 +133,8 @@
               "range": {
                 "start": "2024-03-14T04:46:03.815Z",
                 "end": "2024-03-15T04:46:03.816Z"
-              }
+              },
+              "timestamp": "2024-03-13T04:46:23.000Z"
             }
           }
         }
@@ -211,8 +212,14 @@
         "updated_at": "2024-03-13T04:45:56.605Z"
       },
       "id": "2024-03-13-882290",
-      "state": "Accepted",
-      "updated_at": "2024-03-13T04:46:03.816Z"
+      "state": "In-progress",
+      "updated_at": "2024-03-13T04:49:11.086Z",
+      "documents": [
+        {
+          "label": "Invoice",
+          "url": "https://ondc-testing.myshopify.com/pages/invoice?id=5640218312931"
+        }
+      ]
     }
   }
 }

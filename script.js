@@ -31,7 +31,7 @@ function generateLogs(jsonFilePath) {
 
             if (entry.action == "on_status") {
                 console.log("On___Status", entry.action)
-                const lastFullfillment = entry.logs.message.order.fulfillments[entry.logs.message.order.fulfillments.length - 1];
+                const lastFullfillment = entry.logs.message.order.fulfillments[0];
                 newFileName = `${entry.action}_${lastFullfillment.state.descriptor.code}.json`;
             }
 
@@ -65,6 +65,7 @@ function generateLogs(jsonFilePath) {
 
 
             }
+            newFileName = `${index + 1}.${newFileName}`
             const newFilePath = path.join(downloadDirectory, newFileName);
 
             // Write the prettified JSON content to the new file
