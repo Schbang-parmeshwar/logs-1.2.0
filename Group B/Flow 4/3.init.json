@@ -8,9 +8,9 @@
     "bap_id": "buyer-app-preprod-v2.ondc.org",
     "bap_uri": "https://buyer-app-preprod-v2.ondc.org/protocol/v1",
     "bpp_uri": "https://ondc-v2.niveashop.in/api",
-    "transaction_id": "5bac4579-2442-4485-ab56-94ad89860041",
-    "message_id": "b5524c1e-462c-4da6-8c64-2994e87231f0",
-    "timestamp": "2024-03-15T02:53:37.948Z",
+    "transaction_id": "84664cc5-98de-4252-a440-bae68e9ed7e0",
+    "message_id": "6a9f657c-f396-4442-85c9-b0d864f7f65e",
+    "timestamp": "2024-03-14T19:11:51.870Z",
     "bpp_id": "ondc-v2.niveashop.in",
     "ttl": "PT30S"
   },
@@ -28,7 +28,7 @@
         {
           "id": "43001186156771",
           "quantity": {
-            "count": 1
+            "count": 2
           },
           "location_id": "NIVEA_INDIA",
           "parent_item_id": "7730141790435",
@@ -37,7 +37,7 @@
         {
           "id": "43001186189539",
           "quantity": {
-            "count": 1
+            "count": 2
           },
           "location_id": "NIVEA_INDIA",
           "parent_item_id": "7730141790435",
@@ -57,8 +57,8 @@
         "phone": "9076388126",
         "name": "parmeshwar",
         "email": "parmeshwar.rathod@schbang.com",
-        "created_at": "2024-03-15T02:53:37.948Z",
-        "updated_at": "2024-03-15T02:53:37.948Z"
+        "created_at": "2024-03-14T19:11:51.870Z",
+        "updated_at": "2024-03-14T19:11:51.870Z"
       },
       "fulfillments": [
         {

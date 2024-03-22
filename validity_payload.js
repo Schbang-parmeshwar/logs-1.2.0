@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const downloadDirectory = path.join(__dirname, 'Group A', 'Flow 3');
+const downloadDirectory = path.join(__dirname, 'Group B', 'Flow 5');
 let payload = {}
 payload = {
     "search_full_catalog_refresh": {},
@@ -39,8 +39,8 @@ const returnPayload = () => {
             const filePath = path.join(downloadDirectory, file);
             const fileData = fs.readFileSync(filePath, 'utf8');
             const jsonData = JSON.parse(fileData);
-            const fileNameWithoutExt = path.basename(file, path.extname(file));
-
+            const fileNameWithoutExt = path.basename(file, path.extname(file)).split(".")[1];
+            console.log(fileNameWithoutExt)
             if (fileNameWithoutExt.includes("select")) {
                 let onStatusName = fileNameWithoutExt == "on_select_(out_of_stock)" ? "on_select_out_of_stock" : fileNameWithoutExt == "select_(out_of_stock)" ? "select_out_of_stock" : fileNameWithoutExt == "select" ? "select" : "on_select"
                 payload[onStatusName] = jsonData;

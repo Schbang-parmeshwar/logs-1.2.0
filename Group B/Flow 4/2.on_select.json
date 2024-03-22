@@ -8,9 +8,9 @@
     "bap_id": "buyer-app-preprod-v2.ondc.org",
     "bap_uri": "https://buyer-app-preprod-v2.ondc.org/protocol/v1",
     "bpp_uri": "https://ondc-v2.niveashop.in/api",
-    "transaction_id": "5bac4579-2442-4485-ab56-94ad89860041",
-    "message_id": "6eb7fac0-c380-45d2-a937-8a629dc5723d",
-    "timestamp": "2024-03-15T02:53:29.327Z",
+    "transaction_id": "84664cc5-98de-4252-a440-bae68e9ed7e0",
+    "message_id": "a89077f6-9ef4-4db2-9130-d7f534d66ada",
+    "timestamp": "2024-03-14T19:11:41.998Z",
     "bpp_id": "ondc-v2.niveashop.in",
     "ttl": "PT30S"
   },
@@ -53,14 +53,14 @@
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "463.00"
+          "value": "776.00"
         },
         "breakup": [
           {
             "title": "Body Lotion- Nourishing Body Milk (Very Dry Skin) - 400g",
             "@ondc/org/item_id": "43001186156771",
             "@ondc/org/item_quantity": {
-              "count": 1
+              "count": 2
             },
             "@ondc/org/title_type": "item",
             "item": {
@@ -79,14 +79,14 @@
             },
             "price": {
               "currency": "INR",
-              "value": "239"
+              "value": "478"
             }
           },
           {
             "title": "Body Lotion- Nourishing Body Milk (Very Dry Skin) - 200g",
             "@ondc/org/item_id": "43001186189539",
             "@ondc/org/item_quantity": {
-              "count": 1
+              "count": 2
             },
             "@ondc/org/title_type": "item",
             "item": {
@@ -105,7 +105,7 @@
             },
             "price": {
               "currency": "INR",
-              "value": "149"
+              "value": "298"
             }
           },
           {
@@ -114,7 +114,7 @@
             "@ondc/org/title_type": "delivery",
             "price": {
               "currency": "INR",
-              "value": "75.00"
+              "value": "0.00"
             }
           }
         ],

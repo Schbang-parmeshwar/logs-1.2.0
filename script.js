@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const downloadDirectory = path.join(__dirname, 'Group A', 'Flow 3'); // Replace with your preferred directory structure
+const downloadDirectory = path.join(__dirname, 'Group C', 'Flow 6'); // Replace with your preferred directory structure
 if (!fs.existsSync(downloadDirectory)) {
     fs.mkdirSync(downloadDirectory);
 }
@@ -22,26 +22,34 @@ function generateLogs(jsonFilePath) {
             if (entry.action.includes("search")) {
                 newFileName = `${entry.action}_full_catalog.json`;
             }
-            if (entry.action.includes("select")) {
-                console.log(entry.action)
-                console.log(entry)
-                newFileName = index == 0 || index == 1 ? `${entry.action}_(out_of_stock).json` : `${entry.action}.json`;
-                //     newFileName = `${entry.action}_${index}.json`
-            }
+            // if (entry.action.includes("select")) {
+            //     console.log(entry.action)
+            //     console.log(entry)
+            //     newFileName = index == 0 || index == 1 ? `${entry.action}_(out_of_stock).json` : `${entry.action}.json`;
+            //     //     newFileName = `${entry.action}_${index}.json`
+            // }
 
             if (entry.action == "on_status") {
-                console.log("On___Status", entry.action)
                 const lastFullfillment = entry.logs.message.order.fulfillments[0];
                 newFileName = `${entry.action}_${lastFullfillment.state.descriptor.code}.json`;
             }
 
             if (entry.action.includes("update")) {
+
                 if (entry.action == "update" && entry.logs.message.order) {
-                    newFileName = `${entry.action}_Part_${entry.logs.message.order.fulfillments[0].type}.json`;
+                    if (entry.logs.message.update_target == "item") {
+                        newFileName = `${entry.action}_Part_${entry.logs.message.order.fulfillments[0].type}.json`;
+                    }
+                    if (entry.logs.message.update_target == "payment") {
+                        newFileName = `${entry.action}_settlement.json`;
+                    }
                 }
+
                 if (entry.action == "on_update") {
-                    console.log("On____UPDATE", entry.logs.message.order)
-                    newFileName = `${entry.action}_Part_${entry.logs.message.order.fulfillments[1].state.descriptor.code}.json`;
+                    console.log("On____UPDATE")
+                    const lastFullfillment = entry.logs.message.order.fulfillments[entry.logs.message.order.fulfillments.length - 1];
+
+                    newFileName = `${entry.action}_Part_${lastFullfillment.state.descriptor.code}.json`;
                 }
             }
 
@@ -72,7 +80,6 @@ function generateLogs(jsonFilePath) {
             fs.writeFileSync(newFilePath, JSON.stringify(entry.logs, null, 2));
 
             // Write the entry content to the new file
-            console.log(`Created file: ${newFilePath}`);
         });
     } catch (error) {
         console.error(`Error parsing JSON file ${jsonFilePath}: ${error}`);

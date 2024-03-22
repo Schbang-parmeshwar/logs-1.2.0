@@ -3,14 +3,14 @@
     "domain": "ONDC:RET13",
     "country": "IND",
     "city": "std:022",
-    "action": "on_confirm",
+    "action": "on_update",
     "core_version": "1.2.0",
     "bap_id": "buyer-app-preprod-v2.ondc.org",
     "bap_uri": "https://buyer-app-preprod-v2.ondc.org/protocol/v1",
     "bpp_uri": "https://ondc-v2.niveashop.in/api",
-    "transaction_id": "5f0905f9-0821-4f36-9d0a-bd25c8a3a900",
-    "message_id": "c257a433-13d8-43d3-8556-6be7268eed21",
-    "timestamp": "2024-02-23T06:55:57.157Z",
+    "transaction_id": "5bac4579-2442-4485-ab56-94ad89860041",
+    "message_id": "f5ae1375-526c-45e1-abf9-c4dbe4588cd5",
+    "timestamp": "2024-03-15T03:04:04.882Z",
     "bpp_id": "ondc-v2.niveashop.in",
     "ttl": "PT30S"
   },
@@ -29,33 +29,40 @@
           "id": "43001186156771",
           "fulfillment_id": "Fulfillment1",
           "quantity": {
-            "count": 2
+            "count": 0
           }
         },
         {
           "id": "43001186189539",
           "fulfillment_id": "Fulfillment1",
           "quantity": {
-            "count": 2
+            "count": 1
+          }
+        },
+        {
+          "id": "43001186156771",
+          "fulfillment_id": "C1",
+          "quantity": {
+            "count": 1
           }
         }
       ],
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "776.00"
+          "value": "224"
         },
         "breakup": [
           {
             "title": "Body Lotion- Nourishing Body Milk (Very Dry Skin) - 400g",
             "@ondc/org/item_id": "43001186156771",
             "@ondc/org/item_quantity": {
-              "count": 2
+              "count": 0
             },
             "@ondc/org/title_type": "item",
             "price": {
               "currency": "INR",
-              "value": "478"
+              "value": "0.00"
             },
             "item": {
               "price": {
@@ -68,12 +75,12 @@
             "title": "Body Lotion- Nourishing Body Milk (Very Dry Skin) - 200g",
             "@ondc/org/item_id": "43001186189539",
             "@ondc/org/item_quantity": {
-              "count": 2
+              "count": 1
             },
             "@ondc/org/title_type": "item",
             "price": {
               "currency": "INR",
-              "value": "298"
+              "value": "149"
             },
             "item": {
               "price": {
@@ -88,7 +95,7 @@
             "@ondc/org/title_type": "delivery",
             "price": {
               "currency": "INR",
-              "value": "0.00"
+              "value": "75.00"
             }
           }
         ],
@@ -108,21 +115,21 @@
               "name": "parmeshwar"
             },
             "location": {
-              "gps": "21.099363012524094,82.08722785424908",
+              "gps": "19.162016477047693,73.0781282715088",
               "address": {
                 "name": "parmeshwar",
-                "building": "test",
-                "locality": "Unnamed Road",
-                "city": "Mahasamund",
-                "state": "Chhattisgarh",
+                "building": "police building",
+                "locality": "Nilaje Gaon Station Road",
+                "city": "Kalyan",
+                "state": "Maharashtra",
                 "country": "IND",
-                "area_code": "493445"
+                "area_code": "421204"
               }
             },
             "time": {
               "range": {
-                "start": "2024-02-28T06:55:57.156Z",
-                "end": "2024-02-29T06:55:57.157Z"
+                "start": "2024-03-20T02:54:01.729Z",
+                "end": "2024-03-21T02:54:01.729Z"
               }
             }
           },
@@ -156,20 +163,65 @@
             },
             "time": {
               "range": {
-                "start": "2024-02-23T06:55:57.156Z",
-                "end": "2024-02-24T06:55:57.156Z"
+                "start": "2024-03-16T02:54:01.729Z",
+                "end": "2024-03-17T02:54:01.729Z"
               }
             }
           }
+        },
+        {
+          "id": "C1",
+          "type": "Cancel",
+          "state": {
+            "descriptor": {
+              "code": "Cancelled"
+            }
+          },
+          "tags": [
+            {
+              "code": "cancel_request",
+              "list": [
+                {
+                  "code": "reason_id",
+                  "value": "002"
+                },
+                {
+                  "code": "initiated_by",
+                  "value": "ondc-v2.niveashop.in"
+                }
+              ]
+            },
+            {
+              "code": "quote_trail",
+              "list": [
+                {
+                  "code": "type",
+                  "value": "item"
+                },
+                {
+                  "code": "id",
+                  "value": "43001186156771"
+                },
+                {
+                  "code": "currency",
+                  "value": "INR"
+                },
+                {
+                  "code": "value",
+                  "value": "-239"
+                }
+              ]
+            }
+          ]
         }
       ],
       "payment": {
         "uri": "https://juspay.in/",
         "tl_method": "http/get",
         "params": {
-          "amount": "776",
+          "amount": "463.00",
           "currency": "INR",
-          "transaction_id": "14468e00-19b3-405d-bfb7-0f8431715bd0"
+          "transaction_id": "5b7b8967-ad87-4545-bf84-00a69dd81afa"
         },
         "status": "PAID",
         "type": "ON-ORDER",
@@ -190,54 +242,26 @@
           }
         ]
       },
-      "tags": [
-        {
-          "code": "bpp_terms",
-          "list": [
-            {
-              "code": "tax_number",
-              "value": "27NGBHG1392Y3Z2"
-            },
-            {
-              "code": "np_type",
-              "value": "ISN"
-            },
-            {
-              "code": "provider_tax_number",
-              "value": "BAJPC4350M"
-            }
-          ]
-        },
-        {
-          "code": "bap_terms",
-          "list": [
-            {
-              "code": "tax_number",
-              "value": "GSTIN1234567890"
-            }
-          ]
-        }
-      ],
-      "created_at": "2024-02-23T06:55:51.889Z",
       "billing": {
         "address": {
           "name": "parmeshwar",
-          "building": "test",
-          "locality": "Unnamed Road",
-          "city": "Mahasamund",
-          "state": "Chhattisgarh",
+          "building": "police building",
+          "locality": "Nilaje Gaon Station Road",
+          "city": "Kalyan",
+          "state": "Maharashtra",
           "country": "IND",
-          "area_code": "493445"
+          "area_code": "421204"
         },
         "phone": "9076388126",
         "name": "parmeshwar",
         "email": "parmeshwar.rathod@schbang.com",
-        "created_at": "2024-02-23T06:55:42.315Z",
-        "updated_at": "2024-02-23T06:55:42.315Z"
+        "created_at": "2024-03-15T02:53:37.948Z",
+        "updated_at": "2024-03-15T02:53:37.948Z"
       },
-      "id": "2024-02-23-333874",
+      "id": "2024-03-15-302053",
       "state": "Accepted",
-      "updated_at": "2024-02-23T06:55:57.157Z"
+      "created_at": "2024-03-15T02:53:57.379Z",
+      "updated_at": "2024-03-15T03:04:04.881Z"
     }
   }
 }
